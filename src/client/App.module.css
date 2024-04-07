@@ -1,0 +1,55 @@
+.row {
+  display: flex;
+}
+
+.board {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  width: 120px;
+}
+
+.cell {
+  border: 0 none;
+  outline: 0 none;
+  background-color: transparent;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 1.2em;
+
+  &.disabled {
+    color: silver;
+    border: 1px solid silver;
+  }
+
+  &.selected {
+    color: whitesmoke;
+    border: 1px solid green;
+    background-color: green;
+  }
+
+  &.wait {
+    color: green;
+    border: 1px solid green;
+    cursor: pointer;
+  }
+
+  &.wait:hover {
+    background-color: yellowgreen;
+  }
+
+  &.active {
+    cursor: pointer;
+  }
+
+  &.active:hover {
+    background-color: #747bff;
+  }
+}
+
+.area {
+  display: flex;
+  gap: 10px;
+}
